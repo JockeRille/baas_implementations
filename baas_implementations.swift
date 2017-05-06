@@ -3,7 +3,7 @@
 //  levs
 //
 //  Created by Rikard Olsson on 2017-05-06.
-//  Copyright © 2017 Rikard Olsson. All rights reserved.
+//  Copyright © 2017 Rikard Olsson & Joacim Florén. All rights reserved.
 //
 
 import UIKit
