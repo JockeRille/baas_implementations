@@ -6,7 +6,6 @@
 //  Copyright © 2017 Rikard Olsson & Joacim Florén. All rights reserved.
 //
 
-import UIKit
 import KiiSDK
 import Kinvey
 import KumulosSDK
