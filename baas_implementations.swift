@@ -72,7 +72,7 @@ func kii_create_comment(post_id: String, message: String) {
     }
 }
 
-func kii_get_posts() -> [KiiPost]? {
+func kii_get_posts() {
     
     // Prepare the target bucket to be queried.
     let bucket = Kii.bucket(withName: "post")
@@ -103,7 +103,7 @@ func kii_get_posts() -> [KiiPost]? {
                 posts.append(post)
             }
             
-            return posts
+            // Do something with posts
         } else {
             // Handle empty results
         }
@@ -111,8 +111,6 @@ func kii_get_posts() -> [KiiPost]? {
     } catch let error as NSError {
         // Handle the error.
     }
-    
-    return nil
 }
 
 func kii_get_post(post_id: String, _ withComments: Bool) {
@@ -179,7 +177,7 @@ func kii_get_comments(_ byPostId: String) -> [KiiComment]? {
             
             return comments
         } else {
-            print("Comment result is empty")
+            // Handle error
         }
         
     } catch let error as NSError {
