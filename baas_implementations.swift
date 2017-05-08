@@ -37,7 +37,7 @@ func kii_register_user(username: String, password: String) {
 
 func kii_create_post(title: String, message: String) {
     
-    // Init a private post bucket
+    // Init a post bucket
     let post_bucket = Kii.bucket(withName: "post")
     
     // Init new post
@@ -55,7 +55,7 @@ func kii_create_post(title: String, message: String) {
 }
 
 func kii_create_comment(post_id: String, message: String) {
-    // Init a private post bucket
+    // Init a comment bucket
     let comment_bucket = Kii.bucket(withName: "comment")
     
     // Init new post
